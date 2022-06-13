@@ -16,7 +16,6 @@ println("It is a multiple of five!");
 *value at index 1 is b
 *value at index 2 is c
 */
-
 int [] coefficients= {1,2,-3};
 float x;
 x=(-(coefficients [1])+sqrt (sq(coefficients [1])-4*(coefficients [2])*(coefficients [0])))/(2*(coefficients [0]));
@@ -24,13 +23,20 @@ println("x="+x);
 x=(-(coefficients [1])-sqrt (sq(coefficients [1])-4*(coefficients [2])*(coefficients [0])))/(2*(coefficients [0]));
 println("x="+x);
 
-//Different way
+/*
+*Different Way
+*Variable with Variables
+*/
 int [] coefficient={1,2,-3};
 int a= coefficient [0];
 int b= coefficient [1];
 int c= coefficient [2];
 
+if (sq(b)-4*a*c<0){
+print ("There are no REAL solutions to this quadratic");
+}else{
 x=((-b)+ sqrt( sq( b)- 4*a*c))/(2*a);
 println("x= "+ x);
 x=((-b)- sqrt( sq( b)- 4*a*c))/(2*a);
 println("x= "+ x);
+}

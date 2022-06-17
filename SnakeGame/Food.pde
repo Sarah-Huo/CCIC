@@ -1,12 +1,16 @@
 public class Food{
-  int x;
-  int y;
-  int foodRed;
-  int foodGreen;
-  int foodBlue;
+  int x2;
+  int y2;
+  int foodRed=30;
+  int foodGreen=70;
+  int foodBlue=90;
   
   public Food(){
-    x=int (random(0,400));
-    y= int (random(0,400));
+    x2=int (random(0,400));
+    y2= int (random(0,400));
   }
+  public void drawFood(){
+    fill (foodRed, foodGreen, foodBlue);
+    rect (x2, y2, 10, 10);
+}
 }

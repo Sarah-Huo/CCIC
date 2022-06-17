@@ -15,8 +15,4 @@ void draw (){
   s.changeDirection(keyCode);
   f.drawFood();
   s.isEating();
-   if (s.x==400 || s.y==400){
-     noLoop();
-     println ("Game Over");     
-}
 }

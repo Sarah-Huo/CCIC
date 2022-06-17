@@ -7,7 +7,7 @@ public class Snake{
   int z=10;
   int w=30;
   int score;
-
+  
 public Snake(){
    x =200;
    y= 200;
@@ -25,12 +25,8 @@ public void moveSnake(){
     y=y+1;
   }else if (currentDirection== "Left"){
     x=x-1;
-    z=w;
-    w=z;
   }else if (currentDirection== "Right"){
     x=x+1;
-    z=w;
-    w=z;
     
 }
 }
@@ -49,15 +45,14 @@ public void isEating (){
     if (x2==x && y2==y){
       w=w+1;
       f.drawFood();
-
+      score=score+1;
 }
 }
-public void collision(){
-  if (x==400 || y==400){
-    print ("Game over");
-    noLoop();
-    
-    
+public int x(int x){
+  return x;
 }
+  
+public int y(int y){
+  return y;
 }
 }

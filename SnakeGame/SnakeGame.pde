@@ -1,5 +1,7 @@
 Snake s;
 Food f;
+int x;
+int y; 
 void setup (){
   size (400,400);
   s= new Snake ();
@@ -13,5 +15,8 @@ void draw (){
   s.changeDirection(keyCode);
   f.drawFood();
   s.isEating();
-  s.collision();
+   if (s.x==400 || s.y==400){
+     noLoop();
+     println ("Game Over");     
+}
 }

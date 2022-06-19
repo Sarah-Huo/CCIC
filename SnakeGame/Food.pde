@@ -1,9 +1,9 @@
 public class Food{
   int x2;
   int y2;
-  int foodRed=30;
-  int foodGreen=70;
-  int foodBlue=90;
+  int foodRed=246;
+  int foodGreen=255;
+  int foodBlue=8;
   
   public Food(){
     x2=int (random(0,400));
